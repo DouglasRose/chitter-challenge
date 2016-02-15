@@ -11,7 +11,7 @@ gem 'database_cleaner'
 gem 'rspec-sinatra'
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
-
+gem 'orderly'
 
 group :test do
   gem 'rspec'

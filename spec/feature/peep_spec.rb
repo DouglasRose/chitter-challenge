@@ -15,6 +15,20 @@ feature "post peep" do
   end
 end
 
+# Seperate User Story:
+# As a user
+# I can view peeps without being logged in
+
+# feature " allows all users to see a peep" do
+#   scenario "peeps are visable to all users" do
+#  	# 	register
+#   	# log_in
+#   	peep
+#   	click_button('Log Out')
+#     visit '/peeps'
+#     expect(page).to have_content("This is my first peep")
+#   end
+# end
 
 # Peep.create(body: 'This is what I did today', title: 'First Peep')
 # visit '/stream'

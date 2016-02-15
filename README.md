@@ -1,4 +1,5 @@
-Chitter Challenge
+Project Name: Chitter Challenge
+Week 4 - Makers Academy
 =================
 
 * Challenge time: rest of the day and weekend, until Monday 9am
@@ -10,17 +11,11 @@ Chitter Challenge
 Challenge:
 -------
 
-As usual please start by 
-
-* Filling out your learning plan self review for the week: https://github.com/makersacademy/learning_plan (if you haven't already)
-* Forking this repo
-
-We are going to write a little Twitter clone that will allow the users to post messages to a public stream.
+Write a little Twitter clone that will allow the users to post messages to a public stream.
 
 Features:
 -------
 
-```sh
 As a Maker
 So that I can post messages on Chitter as me
 I want to sign up for Chitter
@@ -44,23 +39,25 @@ I want to see all peeps in reverse chronological order
 As a maker
 So that I can better appreciate the context of a peep
 I want to see the time at which it was made
-```
+
 
 Notes on functionality:
-------
+---------------------
 
-* Drive the creation of your app using tests - either cucumber or rspec as you prefer
-* Makers sign up to chitter with their email, password, name and a user name (e.g. sam@makersacademy.com, s3cr3t, Samuel Russell Hampden Joseph, tansaku).
-* The username and email are unique.
-* Peeps (posts to chitter) have the name of the maker and their user handle.
-* Use bcrypt to secure the passwords.
-* Use data mapper and postgres to save the data.
-* You don't have to be logged in to see the peeps.
-* You only can peep if you are logged in.
-* Please ensure that you update your README to indicate the technologies used, and give instructions on how to install and run the tests
-* Finally submit a pull request before Monday at 9am with your solution or partial solution.  However much or little amount of code you wrote please please please submit a pull request before Monday at 9am
+This is a web application that is designed to be a replica of twitter. A user can register, view 'peeps' (equivalent of 'tweets'), log_in, write their own 'peeps' and log_out. When users register, their password is encrypted and all information is stored on the database. Peeps are displayed in reverse chronological order and with the time they were submitted.
 
-Bonus:
+Installation and example use:
+----------------------------
+
+$ git clone https://github.com/douglasrose/chitter-challenge.git
+$ cd chitter-challenge
+$ bundle install
+$ ruby app/app.rb
+
+navigate to http://localhost:4567/ on browser.
+
+
+<!-- Bonus:
 -----
 
 If you have time you can implement the following:
@@ -80,9 +77,9 @@ In code review we'll be hoping to see:
 
 * All tests passing
 * High [Test coverage](https://github.com/makersacademy/course/blob/master/pills/test_coverage.md) (>95% is good)
-* The code is elegant: every class has a clear responsibility, methods are short etc. 
+* The code is elegant: every class has a clear responsibility, methods are short etc.
 
-Reviewers will potentially be using this [code review rubric](docs/review.md).  Referring to this rubric in advance may make the challenge somewhat easier.  You should be the judge of how much challenge you want this weekend.
+Reviewers will potentially be using this [code review rubric](docs/review.md).  Referring to this rubric in advance may make the challenge somewhat easier.  You should be the judge of how much challenge you want this weekend. -->
 
 Notes on test coverage
 ----------------------
@@ -98,7 +95,7 @@ SimpleCov.formatters = [
   SimpleCov::Formatter::HTMLFormatter,
   Coveralls::SimpleCov::Formatter
 ]
-Coveralls.wear! 
+Coveralls.wear!
 ```
 
 You can see your [test coverage](https://github.com/makersacademy/course/blob/master/pills/test_coverage.md) when you submit a pull request, and you can also get a summary locally by running:
@@ -108,4 +105,3 @@ $ coveralls report
 ```
 
 This repo works with [Coveralls](https://coveralls.io/) to calculate test coverage statistics on each pull request.
-
